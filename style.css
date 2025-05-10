@@ -29,3 +29,8 @@ hr{
     border-top: 2px solid #ccc;
     margin: 40px 0;
 }
+table, th, tr{
+    text-align: center;
+    border: 1px, solid, #ccc;
+    border-collapse: collapse;
+}
