@@ -6,9 +6,26 @@
     <title>Mirasımız - Şirvanşahlar Sarayı</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .hero-header{
+            background: url("fotograflar/foto5.jpg") no-repeat center center/cover;
+            position: relative;
+        }
+        .hero-header::before{
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 128, 0.6);
+            z-index: 0;
+        }
+        .hero-header .container{
+            position: relative;
+            z-index: 1;
+        }
+    </style>
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-5">
+    <header class="hero-header text-white text-center py-5">
         <div class="container">
             <h1>Şirvanşahlar Sarayı</h1>
             <p class="lead">Bakü'nün kalbindeki tarihi ve mimari miras</p>
@@ -16,9 +33,10 @@
     </header>
 
     <main class="container my-5">
-        <div class="row">
+
+        <div class="row align-items-center mb-5">
             <div class="col-md-6">
-                <img src="" class="img-fluid rounded shadow" alt="Şirvanşahlar Sarayı">
+                <img src="fotograflar/foto6.jpg" class="img-fluid rounded shadow" alt="Şirvanşahlar Sarayı">
             </div>
             <div class="col-md-6">
 
@@ -31,6 +49,29 @@
                 <h2>UNESCO Listesi</h2>
                 <p>1990'lı yıllarda UNESCO Dünya Mirası Listesi'ne alınmış ve korunmaya başlanmıştır. Bugün müze olarak hizmet vermektedir.</p>
             </div>
+        </div>
+
+        <div id="saraySlider" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="fotograflar/foto7.jpg" class="d-block w-100 rounded" alt="Saray Foto 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="fotograflar/foto9.jpg" class="d-block w-100 rounded" alt="Saray Foto 2">
+                </div>
+                 <div class="carousel-item">
+                    <img src="fotograflar/foto10.jpg" class="d-block w-100 rounded" alt="Saray Foto 3">
+                </div>
+                 <div class="carousel-item">
+                    <img src="fotograflar/foto11.jpg" class="d-block w-100 rounded" alt="Saray Foto 4">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#saraySlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#saraySlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
     </main>
 
