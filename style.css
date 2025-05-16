@@ -92,3 +92,10 @@ table, th, tr{
     display: inline-block;
     padding-bottom: 5px;
 }
+
+.header-custom{
+    background: linear-gradient(rgba(13, 110, 253, 0.7), rgba(13, 110, 253, 0.7)), url("img/background.jpg");
+    background-size:  cover;
+    background-position: center;
+    color: white;
+}
