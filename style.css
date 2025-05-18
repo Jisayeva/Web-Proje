@@ -7,16 +7,21 @@ body{
 }
 
 .navbar-custom {
-    background: linear-gradient(to right, #ec407a, #ab47bc);
+    background: linear-gradient(rgba(172, 57, 142, 0.7), rgba(123, 31, 162, 0.7));
 }
 
 .navbar-nav .nav-link{
-    color: #ffe6ff !important;
-    text-decoration: underline;
+    color: #ffe3ff !important;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
 }
 
+
 .header-custom{
-    background: linear-gradient(rgba(172, 57, 142, 0.7), rgba(123, 31, 162, 0.7)), url("img/background.jpg");
+    background: linear-gradient(to right, #ec407a, #ab47bc), url("img/background.jpg");
     background-size: cover;
     background-position: center;
     color: white;
@@ -46,7 +51,7 @@ h2{
 }
 
 .card:hover{
-    transform: scale(1.05s);
+    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
@@ -57,17 +62,18 @@ h2{
 }
 
 .link:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: #e91e63;
 }
 
 
 footer{
-    background: linear-gradient(to right, #ec407a, #ab47bc);
+    background: linear-gradient(rgba(172, 57, 142, 0.7), rgba(123, 31, 162, 0.7));
     color:white;
     padding: 15px 0;
     text-align: center;
 }
+
 
 
 
