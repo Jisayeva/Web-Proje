@@ -63,7 +63,7 @@ new Vue({
                 hata += "Geçerli bir e-posta adresi giriniz.\n";
             }
             if (!telefonRegex.test(tel)) {
-                hata += "Telefon sadece rakamlardan oluşmalıdır./n";
+                hata += "Telefon sadece rakamlardan oluşmalıdır.\n";
             }
             if (konu === "Konu Seçiniz..." || konu === null) {
                 hata += "Bir konu seçiniz.\n";

@@ -1,3 +1,6 @@
+html, body{
+    height: 100%;
+}
 body{
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(to right, #fce4ec, #e1bee7);
@@ -38,9 +41,10 @@ img{
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-h2{
-    color: #ab47bc;
+.login-box h2{
+    color: #8e24aa;
     margin-top: 30px;
+    font-weight: bold;
 }
 
 .card{
@@ -78,6 +82,7 @@ footer{
     background: linear-gradient(rgba(172, 57, 142, 0.7), rgba(123, 31, 162, 0.7));
     color:white;
     padding: 15px 0;
+    margin-top: auto;
     text-align: center;
 }
 
@@ -153,8 +158,53 @@ table, th, tr{
     padding-bottom: 5px;
 }
 
+.login-box {
+    background-color: white;
+    max-width: 500px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
 
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 0 0 transparent;
+}
 
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #ab47bc !important;
+    outline: none;
+    box-shadow: 0 0 8px #ab47bc88 !important;
+}
 
+.btn-custom{
+    margin-top: 20px;
+    text-decoration: none !important;  
+    background: linear-gradient(to right, #d500d9, #f06292);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
 
-
+.btn-custom:hover {
+    text-decoration: none !important;
+    background: linear-gradient(to right, #aa00ff, #ec407a);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}

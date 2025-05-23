@@ -38,11 +38,12 @@
     </nav>
 
     <!-- Form -->
-    <main class="container my-5">
-        <h2 class="text-center mb-4">İletişim Formu</h2>
+    <main class="flex-grow-1 d-flex align-items-center justify-content-center">
         <div id="app">
-            <form id="iletisimForm" action="sonuc.html" method="GET">
-                <div class="row g-3">
+            <div class="login-box shadow-lg">
+                <h2 class="text-center mb-4">İletişim Formu</h2>
+                <form id="iletisimForm" action="sonuc.html" method="GET">
+                    <div class="row g-3">
                     <div class="col-md-6">
                         <label for="ad" class="form-label">Ad Soyad</label>
                         <input type="text" class="form-control" id="ad" name="ad" />
@@ -70,14 +71,15 @@
                         <textarea class="form-control" name="mesaj" id="mesaj" rows="4"></textarea>
                     </div>
                 </div>
-
-                <div class="col-md-12 text-center mt-4">
-                    <button type="reset" class="btn btn-secondary me-2">Temizle</button>
-                    <button type="submit" id="gonderBtn" class="btn btn-primary me-2" disabled>Gönder</button>
-                    <button type="button" class="btn btn-success" @click="vueKontrol">Doğrula</button>
+                
+                <div class="text-center mt-4">
+                    <button type="reset" class="btn-custom me-2"><i class="bi bi-x-circle me-1"></i>Temizle</button>
+                    <button type="button" class="btn-custom" @click="vueKontrol"><i class="bi bi-shield-check me-1"></i>Doğrula</button>
+                    <button type="submit" id="gonderBtn" class="btn-custom me-2" id="gonderBtn" disabled><i class="bi bi-send-fill me-1"></i>Gönder</button>
                 </div>
             </form>
         </div>
+    </div>
     </main>
 
     <!-- Footer -->
