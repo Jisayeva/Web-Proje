@@ -224,7 +224,7 @@ textarea:focus {
 
 .carusel-inner img {
     object-fit: cover;
-    width: 100%;
+    border-radius: 16px;
     max-height: 300px;
 
 }
@@ -235,3 +235,23 @@ textarea:focus {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
+
+.intro-box {
+    background: linear-gradient(to right, #ec407a, #ab47bc);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    border-radius: 16px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.hobby-card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.hobby-card:hover {
+    transform: scale(1.05);
+}
+

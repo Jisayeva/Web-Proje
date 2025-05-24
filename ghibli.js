@@ -42,5 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(err => {
         console.error("Hata oluştu:", err);
+        const container = document.getElementById("filmContainer");
+        container.innerHTML = `<p class="text-danger">Filmler yüklenirken bir hata oluştu.</p>`;
     });
 });
